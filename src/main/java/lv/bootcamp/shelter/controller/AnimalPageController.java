@@ -17,12 +17,14 @@ public class AnimalPageController
 
     private final AnimalService animalService;
 
+    //index page
     @GetMapping("/")
     public String index()
     {
         return "index";
     }
 
+    //all animals
     @GetMapping("/animals")
     public String listAnimals(Model model)
     {
@@ -30,6 +32,7 @@ public class AnimalPageController
         return "animals";
     }
 
+    //new animal form (only admin)
     @GetMapping("/animals/new")
     public String newAnimalForm(Model model)
     {
@@ -38,6 +41,7 @@ public class AnimalPageController
         return "animals-new";
     }
 
+    //add animal after form submit
     @PostMapping("/animals")
     public String createAnimal(AnimalForm form)
     {

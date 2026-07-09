@@ -1,3 +1,13 @@
+# Tasks Done
+Task A base implementation completed:
+- Navigation menu moved to a Thymeleaf fragment.
+- CSS moved to a separate file.
+- Security check added for the CSS folder.
+
+Task B base implementation completed.
+
+No Bonus tasks at the moment,as it's already 2pm, will see how it goes with advanced unit test, might come back before assigment will be checked.
+
 # Shelter Starter
 
 ## Purpose
