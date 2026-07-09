@@ -45,14 +45,8 @@
   <!-- ADMIN-only: only render the "Add animal" link when isAdmin is true -->
   <div th:replace="~{fragments/navigation :: mainNav}"></div>
 
-  <main>
+  <main class="main">
     <h1>Add a new animal</h1>
-
-    <!--
-      TODO: replace action="/animals" with th:action="@{/animals}"
-            add th:object="${form}" to <form>
-            replace name="..." on each input with th:field="*{fieldName}"
-    -->
     <form th:action="@{/animals}" th:object="${form}" method="post">
 
       <label for="name">Name</label>

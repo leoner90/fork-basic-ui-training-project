@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.*;
 @RequiredArgsConstructor
 public class AnimalPageController
 {
-
     private final AnimalService animalService;
 
     //index page
@@ -47,5 +46,12 @@ public class AnimalPageController
     {
         animalService.createFromForm(form);
         return "redirect:/animals";
+    }
+
+    //login page
+    @GetMapping("/login")
+    public String login()
+    {
+        return "login";
     }
 }

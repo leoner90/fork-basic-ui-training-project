@@ -56,6 +56,11 @@
             <version>2.8.17</version>
         </dependency>
 
+        <!--        for logout to access status-->
+        <dependency>
+            <groupId>org.thymeleaf.extras</groupId>
+            <artifactId>thymeleaf-extras-springsecurity6</artifactId>
+        </dependency>
 
         <!-- JJWT: bonus task — JWT auth for the API/Swagger part, see SecurityConfig -->
         <!--

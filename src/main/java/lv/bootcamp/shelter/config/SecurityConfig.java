@@ -110,7 +110,12 @@ public class SecurityConfig {
 
                         .anyRequest().authenticated()
                 )
-                .formLogin(Customizer.withDefaults())
+                //.formLogin(Customizer.withDefaults())
+                .formLogin(form -> form
+                        .loginPage("/login")
+                        .defaultSuccessUrl("/animals", true)
+                        .permitAll()
+                )
                 .httpBasic(Customizer.withDefaults())
                 .logout(Customizer.withDefaults());
 

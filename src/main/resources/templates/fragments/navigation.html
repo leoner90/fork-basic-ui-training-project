@@ -1,12 +1,19 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
-<body>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 
-<nav th:fragment="mainNav">
+<nav class="nav" th:fragment="mainNav">
     <a th:href="@{/}">Home</a>
     <a th:href="@{/animals}">All animals</a>
     <a th:href="@{/animals/new}">Add animal</a>
+    <a th:href="@{/swagger-ui/index.html}">Swagger UI</a>
+    <a th:href="@{/login}" class="cta" sec:authorize="isAnonymous()">Login</a>
+
+    <!--    got a little help here :)-->
+    <form th:action="@{/logout}" method="post" sec:authorize="isAuthenticated()" style="display:inline;">
+        <button type="submit">Logout</button>
+    </form>
+
 </nav>
 
-</body>
+
 </html>

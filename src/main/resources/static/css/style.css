@@ -1,13 +1,13 @@
-body { font-family: sans-serif; max-width: 760px; margin: 2rem auto; padding: 0 1rem; }
-nav { background: #f1f5f9; padding: 0.6rem 1rem; border-radius: 6px; margin-bottom: 1.5rem; }
-nav a { margin-right: 1rem; text-decoration: none; color: #2563eb; }
-nav a:hover { text-decoration: underline; }
+
+.nav { background: #f1f5f9; padding: 0.9rem 1rem; border-radius: 6px;   max-width: 760px;   margin: 1.5rem auto;}
+.nav a { margin-right: 1rem; text-decoration: none; color: #86a8f4; }
+.nav a:hover { text-decoration: underline; }
 h1 { border-bottom: 2px solid #333; padding-bottom: 0.4rem; }
 .cta { display: inline-block; margin-top: 1rem; padding: 0.6rem 1.2rem;
     background: #2563eb; color: white; border-radius: 4px; text-decoration: none; }
 .cta:hover { background: #1d4ed8; }
 
-form { display: grid; gap: 0.5rem; max-width: 480px; margin-top: 1rem; }
+form { display: grid; gap: 0.5rem; max-width: 480px;  margin: 0 auto; }
 label { font-weight: bold; }
 input, select, textarea { padding: 0.4rem; border: 1px solid #ccc; border-radius: 4px; width: 100%; box-sizing: border-box; }
 button { padding: 0.6rem 1.2rem; background: #2563eb; color: white; border: none; border-radius: 4px; cursor: pointer; width: fit-content; }
@@ -29,3 +29,62 @@ label { font-weight: bold; }
 input, select, textarea { padding: 0.4rem; border: 1px solid #ccc; border-radius: 4px; width: 100%; box-sizing: border-box; }
 button { padding: 0.6rem 1.2rem; background: #2563eb; color: white; border: none; border-radius: 4px; cursor: pointer; width: fit-content; }
 button:hover { background: #1d4ed8; }
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    padding: 0 1rem;
+    max-width: 100%;
+    text-align: center;
+    min-height: 100vh;
+    background-image: url("../images/loginPageBg.jpg");
+    color: aliceblue;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main {
+    min-height: 100vh;
+    background-color: rgba(0, 37, 64, 0.9);
+    padding: 20px;
+    max-width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.login-page {
+    min-height: 100vh;
+    background-image: url("../images/loginPageBg.jpg");
+    color: aliceblue;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.loginForm
+{
+    padding-top: 200px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1365px) {
+    .nav a {
+        display: block;
+    }
+
+    .nav
+    {
+        margin: 5px;
+    }
+
+    .main {
+        margin: 0;
+    }
+}
